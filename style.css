@@ -15,7 +15,7 @@ header {
   width:100vw;
   top:0;
   left:0;
-  padding:15px max(5vw, calc(100vw - 500px));
+  padding:15px max(5vw, calc(50vw - 500px));
 }
 h1{
   font-size:25px;
