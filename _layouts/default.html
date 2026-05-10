@@ -7,6 +7,24 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
   </style>
+    <script>
+window.addEventListener('load', () => {
+  const sukuro = document.querySelector(".sukuro");
+  let ticking = false;
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        let scroll_y = window.scrollY;
+let limited_y = Math.max(scroll_y, 0);
+        sukuro.style.top = 3 * limited_y / 5 - 1000 + "px";
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+});
+  </script>
 </head>
 <body>
     <header class="sukuro">
