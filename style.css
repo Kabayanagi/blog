@@ -9,32 +9,39 @@ body {
 header {
   background-color: #fffefd;
   border-bottom: 1px solid #333;
-  position:fixed;
+  position:absolute;
   padding:0;
   box-sizing: border-box;
   width:100vw;
-  top:0;
-  left:0;
+  top:-1000px;
+  right:0;
   padding:15px;
 }
+.page_header{padding:50px 0;}
+.fllx{display:flex;}
+h1{font-size:30px; max-width:600px; width:calc(95vw - 100px); line-height:30px; padding:0; font-weight:400; margin:0;}
+h1 span{background: linear-gradient(transparent 68.75%, rgba(0 , 128 , 256 , 0.5) 25%);}
+.pan{font-weight:500; font-size:12px;}
 .title{
-  font-size:25px;
+ font-size:25px;
   line-height:25px;
   font-weight:400;
   padding:0;
   margin:0;
 }
+.time{line-height:18px; margin-top:auto; margin-left:auto;}
 main{
-  padding-top:56px;
+padding-top:56px;
   margin:0 auto;
   max-width:700px;
 box-sizing: border-box;
-min-height:calc(100vh - 28px);
+min-height:calc(100vh - 37px);
 width:95vw;
 }
 footer{
-  border-top: 1px solid #333; padding:5px; line-height:18px; text-align:center;
+  padding:10px 0; width:95vw; margin:0 auto; max-width:700px; display:flex;
 }
-footer span{
+footer div{line-height:18px; margin-left:auto;}
+footer div span{
   margin:5px;
 }
