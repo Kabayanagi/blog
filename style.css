@@ -15,7 +15,7 @@ header {
   width:100vw;
   top:0;
   left:0;
-  padding:15px max(5vw, calc(50vw - 400px));
+  padding:15px;
 }
 h1{
   font-size:25px;
@@ -27,10 +27,13 @@ h1{
 main{
   padding-top:56px;
   margin:0 auto;
-  max-width:800px;
+  max-width:700px;
+box-sizing: border-box;
+min-height:calc(100vh - 28px);
+width:95vw;
 }
 footer{
-  border-top: 1px solid #333; text-align:center;
+  border-top: 1px solid #333; padding:5px; line-height:18px; text-align:center;
 }
 footer span{
   margin:5px;
