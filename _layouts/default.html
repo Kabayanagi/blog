@@ -5,39 +5,48 @@
     <title>川下の渡し</title>
     <link rel="stylesheet" href="style.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
   </style>
-    <script>
-window.addEventListener('load', () => {
-  const sukuro = document.querySelector(".sukuro");
-  let ticking = false;
-
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        let scroll_y = window.scrollY;
-let limited_y = Math.max(scroll_y, 0);
-        sukuro.style.top = 3 * limited_y / 5 - 1000 + "px";
-        ticking = false;
-      });
-      ticking = true;
-    }
-  });
-});
-  </script>
 </head>
-<body>
-    <header class="sukuro">
-<div style="height:1000px;"></div>
-        <div class="title">川下の渡し</div>
+<body id="krd">
+    <header><div class="title">川下の渡し</div><div class="sugo"><svg viewBox="-4 -4 28 28" style="height:28px; position:relative; top:-1.5px;" xmlns="http://www.w3.org/2000/svg">
+<path fill="#44403c" d="M5 0 Q0 0 0 5 L0 15 Q0 20 5 20 L15 20 Q20 20 20 15 L20 5 Q20 0 15 0 Z"></path>
+<path fill="#44403c" d="M5 0 Q0 0 0 5 L0 15 Q0 20 5 20 L15 20 Q20 20 20 15 L20 5 Q20 0 15 0 Z"></path>
+<path fill="#fffcfc" d="M13 3 L8 9 Q8 7 11 7 Q15 7 15 12 Q15 15 12 18 L11 17 Q13 15 13 12 Q13 9 11 9 Q8 9 6 12 L5 11 L11 2 Z"></path>
+</svg></div>
+<button id="hnb" class="hanba">
+<svg viewBox="0 0 30 26" style="height:26px; width:32px;" xmlns="http://www.w3.org/2000/svg">
+<path stroke-width="10" class="aa" stroke="#fffcfc" fill="none" d="M0 5 L32 5" stroke-linecap="butt"></path>
+<path stroke-width="10" class="aa" stroke="#fffcfc" fill="none" d="M0 13 L32 13" stroke-linecap="butt"></path>
+<path stroke-width="10" class="aa" stroke="#fffcfc" fill="none" d="M0 21 L32 21" stroke-linecap="butt"></path>
+<path stroke-width="2" class="aa" stroke="#44403c" fill="none" d="M4 5 L28 5" stroke-linecap="butt"></path>
+<path stroke-width="2" class="aa" stroke="#44403c" fill="none" d="M4 13 L28 13" stroke-linecap="butt"></path>
+<path stroke-width="2" class="aa" stroke="#44403c" fill="none" d="M4 21 L28 21" stroke-linecap="butt"></path>
+</svg></button>
     </header>
-    <main>
-        {{ content }}
-    </main>
-  <footer>
+<nav id="nkm">
+<ul>
+<li>プロフィール</li>
+<li>カテゴリ</li>
+<li>タグ</li>
+<li>アーカイブ</li>
+<li>リンク</li>
+</ul>
+</nav>
+    <main id="zzz">
+      <div class="page_header">
+<div class="pan">ホーム>ブログ</div>
+  <div class="fllx"><h1>装飾の凡例</h1><div class="time">2026/05/10</div></div>
+</div>
 <div>
-    <span>©<script>document.write(new Date().getFullYear());</script></span><span>かばやなぎ</span><span><svg height="16px" style="vertical-align: -2px;" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="#44403c"/></svg></span>
+{{content}}
+</div>
+    </main>
+  <footer id="zzzz">
+<div>
+    <span>©<span id="bfr"></span></span><span>かばやなぎ</span><span><svg aria-label="X" height="16px" style="vertical-align: -2px;" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="#44403c"/></svg></span>
 </div>
   </footer>
+<script src="script.js"></script>
 </body>
 </html>
