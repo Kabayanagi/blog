@@ -1,28 +1,58 @@
 body {
-  font-family:"Figtree","Zen Kaku Gothic Antique",sans-serif;
+  font-family:"Figtree","Zen Kaku Gothic New",sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fffefd;
+  background-color: #fffcfc;
   color:#44403c;
   font-size:18px;
 }
-header {
-  background-color: #fffefd;
-  border-bottom: 1px solid #333;
-  position:absolute;
-  padding:0;
-  box-sizing: border-box;
-  width:100vw;
-  top:-1000px;
-  right:0;
-  padding:15px;
+.sugo{position:absolute; left:11px; top:13px;
 }
-.page_header{padding:50px 0;}
+.sugo path:nth-child(1){stroke:#fffcfc; stroke-width:8px;
+}
+body.open{overflow:hidden;
+}
+strong{font-weight:400;
+background: linear-gradient(transparent 68.75%, #c0e0ff 25%);}
+header {
+z-index:100;
+  position:fixed;
+  box-sizing: border-box;
+  width:calc(95vw + 30px);
+max-width:900px;
+  left:0;
+right:0;
+top:0;
+  padding:15px;
+margin:0 auto;
+}
+.hanba{position:absolute; background:#fffcfc; top:14.5px; right:12px;
+}
+.page_header{padding:5px 0 25px 0;}
 .fllx{display:flex;}
-h1{font-size:30px; max-width:600px; width:calc(95vw - 100px); line-height:30px; padding:0; font-weight:400; margin:0;}
-h1 span{background: linear-gradient(transparent 68.75%, rgba(0 , 128 , 256 , 0.5) 25%);}
+h1{font-size:30px; background: linear-gradient(transparent 68.75%, #c0e0ff 25%); max-width:600px; width:fit-content; line-height:30px; padding:0; font-weight:400; margin:0;}
+h2{font-size:27.5px; border:none; width:fit-content; line-height:1; padding:0; margin:15px 0; font-weight:400;}
+h3{font-size:25px; border:none; width:fit-content; line-height:1; padding:0; font-weight:400; margin:15px 0;}
+h4{font-size:22.5px; border:none; width:fit-content; line-height:1; padding:0; font-weight:400; margin:15px 0;}
+h6{font-size:18px; border:none; width:fit-content; line-height:1; padding:0; background: linear-gradient(transparent 68.75%, #c0e0ff 25%); font-weight:400; margin:15px 0;}
+h5{font-size:20px; border:none; width:fit-content; line-height:1; padding:0; font-weight:400; margin:15px 0;}
 .pan{font-weight:500; font-size:12px;}
 .title{
+ font-size:25px;
+  line-height:25px;
+  font-weight:400;
+  padding:0;
+  margin:0;
+-webkit-text-stroke: 8px #fffcfc;
+position:relative;
+left:25px;
+}
+.title::after{
+    content:"川下の渡し";
+position:absolute;
+-webkit-text-stroke: 0;
+top:0;
+left:0;
  font-size:25px;
   line-height:25px;
   font-weight:400;
@@ -31,17 +61,89 @@ h1 span{background: linear-gradient(transparent 68.75%, rgba(0 , 128 , 256 , 0.5
 }
 .time{line-height:18px; margin-top:auto; margin-left:auto;}
 main{
-padding-top:56px;
+padding-top:55px;
   margin:0 auto;
-  max-width:700px;
+  max-width:800px;
 box-sizing: border-box;
 min-height:calc(100vh - 37px);
 width:95vw;
+position:relative;
+z-index:50;
 }
 footer{
-  padding:10px 0; width:95vw; margin:0 auto; max-width:700px; display:flex;
+  padding:10px 0; width:95vw; margin:0 auto; max-width:800px; display:flex;
+position:relative;
+z-index:50;
+}
+main.open{z-index:0;
+}
+footer.open{z-index:0;
 }
 footer div{line-height:18px; margin-left:auto;}
-footer div span{
+footer div span:not(#bfr){
   margin:5px;
+}
+#nkm{
+display:flex;
+position:fixed;
+height:100vh;
+width:100vw;
+opacity:0;
+background:#fffcfc;
+align-items: center;
+font-size:25px;
+transition:opacity 0.5s;
+transition-delay: 0.2s;
+z-index:25;
+}
+#nkm.open{
+transition-delay: 0s;
+opacity:1;
+}
+#hnb path{transform:translateY(0);
+transition:all 0.5s;
+}
+#hnb.open path:nth-child(1){transform:translateY(8px);
+}
+#hnb.open path:nth-child(3){transform:translateY(-8px);
+}
+#hnb.open path:nth-child(4){transform:translateY(8px);
+}
+#hnb.open path:nth-child(6){transform:translateY(-8px);
+}
+#nkm ul{
+width:fit-content;
+margin:auto;
+padding:0;
+}
+#nkm li{text-align:center;
+transform:translateX(10px);
+list-style: none;
+opacity:0;
+padding:0;
+margin:0;
+transition:all 0.5s;
+}
+#nkm.open li{transform:translateX(0);
+opacity:1;
+}
+#nkm li:nth-child(1){transition-delay: 0.4s;
+}
+#nkm li:nth-child(2){transition-delay: 0.3s;
+}
+#nkm li:nth-child(3){transition-delay: 0.2s;
+}
+#nkm li:nth-child(4){transition-delay: 0.1s;
+}
+#nkm li:nth-child(5){transition-delay: 0s;
+}
+#nkm.open li:nth-child(1){transition-delay: 0.3s;
+}
+#nkm.open li:nth-child(2){transition-delay: 0.4s;
+}
+#nkm.open li:nth-child(3){transition-delay: 0.5s;
+}
+#nkm.open li:nth-child(4){transition-delay: 0.6s;
+}
+#nkm.open li:nth-child(5){transition-delay: 0.7s;
 }
