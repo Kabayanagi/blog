@@ -3,3 +3,4 @@ description: 穏やかな流れとわたしのブログ
 baseurl: /blog
 url: https://kabayanagi.github.io
 paginate: 5
+permalink: /:categories/:title:output_ext
