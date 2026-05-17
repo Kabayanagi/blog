@@ -33,11 +33,9 @@ margin:0 auto;
 .page_header{padding:5px 0 25px 0;}
 .fllx{display:flex;}
 h1{font-size:30px; background: linear-gradient(transparent 68.75%, #c0e0ff 25%); max-width:600px; width:fit-content; line-height:30px; padding:0; font-weight:400; margin:0;}
-h2{font-size:27.5px; border:none; width:fit-content; line-height:1; padding:0; margin:15px 0; font-weight:400;}
-h3{font-size:25px; border:none; width:fit-content; line-height:1; padding:0; font-weight:400; margin:15px 0;}
-h4{font-size:22.5px; border:none; width:fit-content; line-height:1; padding:0; font-weight:400; margin:15px 0;}
-h6{font-size:18px; border:none; width:fit-content; line-height:1; padding:0; background: linear-gradient(transparent 68.75%, #c0e0ff 25%); font-weight:400; margin:15px 0;}
-h5{font-size:20px; border:none; width:fit-content; line-height:1; padding:0; font-weight:400; margin:15px 0;}
+h2{font-size:25px; border:none; width:fit-content; line-height:1; padding:0; margin:15px 0; font-weight:400;}
+h3{font-size:22.5px; border:none; width:fit-content; line-height:1; padding:0; font-weight:400; margin:15px 0;}
+h4{font-size:18px; border:none; width:fit-content; line-height:1; padding:0; background: linear-gradient(transparent 68.75%, #c0e0ff 25%); font-weight:400; margin:15px 0;}
 .pan{font-weight:500; font-size:12px;}
 .title{
  font-size:25px;
