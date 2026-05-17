@@ -1,3 +1,24 @@
+window.addEventListener('load', function() {
+    const fpg = document.getElementById('front-page');
+    if (fpg) {
+        const wthStr = window.getComputedStyle(fpg).width;
+        const wth = parseFloat(wthStr);
+        const divs = fpg.querySelectorAll(':scope > a');
+        if (wth === 800) {
+            divs.forEach(div => {
+                div.style.width = (800 / 3) + 'px';
+            });
+        } else if (wth >= 1600 / 3) {
+            divs.forEach(div => {
+                div.style.width = (wth / 2) + 'px';
+            });
+        } else {
+            divs.forEach(div => {
+                div.style.width = wthStr;
+            });
+        }
+    }
+});
 document.addEventListener('DOMContentLoaded', function() {
   const yearSpan = document.getElementById('bfr');
   if (yearSpan) {
