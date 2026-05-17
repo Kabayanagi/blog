@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
     if (fpg) {
         const wthStr = window.getComputedStyle(fpg).width;
         const wth = parseFloat(wthStr);
-        const divs = fpg.querySelectorAll(':scope > a');
+        const divs = fpg.querySelectorAll(':scope > div');
         if (wth === 800) {
             divs.forEach(div => {
                 div.style.width = (800 / 3) + 'px';
