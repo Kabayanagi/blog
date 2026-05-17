@@ -6,7 +6,28 @@ body {
   color:#44403c;
   font-size:18px;
 }
-p{margin:0; padding:0;}
+#front-page{display:flex; flex-wrap: wrap;
+}
+#front-page>a{
+padding:6px;
+height:276px;
+box-sizing: border-box;
+overflow:hidden;
+position:relative;
+top:-12px;
+color:#44403c;
+text-decoration:none;
+}
+#front-page>a>div>h2{
+font-size:18px;
+margin:0 18px;
+line-height:1.5;
+}
+#front-page>a>div>.dadada{text-align:right; background:#fffcfc; position:absolute; bottom:0;
+width:100%; right:6px;
+}
+#front-page>a>div *{font-size:18px;line-height:1.5;}
+p{margin:0; line-height:1.75; padding:0;}
 .sugo{position:absolute; left:11px; top:13px;
 }
 .sugo path:nth-child(1){stroke:#fffcfc; stroke-width:8px;
@@ -29,7 +50,7 @@ top:0;
   padding:15px;
 margin:0 auto;
 }
-.hanba{position:absolute; background:#fffcfc; top:11px; right:8px;
+.hanba{position:absolute; background:none; border:0; top:11px; right:8px;
 }
 .page_header{padding:5px 0 25px 0;}
 .fllx{display:flex;}
