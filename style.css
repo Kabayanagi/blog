@@ -10,6 +10,8 @@ body {
 }
 .sugo path:nth-child(1){stroke:#fffcfc; stroke-width:8px;
 }
+header a{color:#44403c; text-decoration: none;}
+#nkm a{color:#44403c; text-decoration: none;}
 body.open{overflow:hidden;
 }
 strong{font-weight:400;
