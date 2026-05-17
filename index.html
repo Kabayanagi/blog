@@ -3,12 +3,10 @@ layout: default
 ---
 <div id="front-page">
   {% for post in paginator.posts %}
-  <a href="{{ post.url }}">
     <div>
-      <h2><strong>{{ post.title }}</strong></h2>
-      <div>{{ post.content }}</div>
-      <div class="dadada">{{ post.date | date: '%Y/%m/%d' }}</div>
+      <h2><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h2>
+      <div><a href="{{ post.url }}">{{ post.content }}</a></div>
+      <div class="dadada"><a href="{{ post.url }}">{{ post.date | date: '%Y/%m/%d' }}</a></div>
     </div>
-  </a>
   {% endfor %}
 </div>
