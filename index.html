@@ -5,9 +5,9 @@ layout: default
   {% for post in paginator.posts %}
     <div>
       <h2><strong>{{ post.title }}</strong></h2>
-      <div>{{ post.content }}</div>
+      <div>{{ post.excerpt }}</div>
       <div class="dadada">{{ post.date | date: '%Y/%m/%d' }}</div>
-      <a href="blog/{{ post.url }}"></a>
+      <a href="{{ post.url }}"></a>
     </div>
   {% endfor %}
 </div>
