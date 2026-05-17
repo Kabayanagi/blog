@@ -1,7 +1,14 @@
 ---
 layout: default
 ---
-
-<div class="contents front-page">
-  記事一覧(予定)
+<div id="front-page">
+  {% for post in paginator.posts %}
+  <a href="{{ post.url }}">
+    <div>
+      <h2><strong>{{ post.title }}</strong></h2>
+      <div>{{ post.content }}</div>
+      <div class="dadada">{{ post.date | date: '%Y/%m/%d' }}</div>
+    </div>
+  </a>
+  {% endfor %}
 </div>
