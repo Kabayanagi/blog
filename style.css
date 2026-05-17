@@ -6,6 +6,7 @@ body {
   color:#44403c;
   font-size:18px;
 }
+p{margin:0; padding:0;}
 .sugo{position:absolute; left:11px; top:13px;
 }
 .sugo path:nth-child(1){stroke:#fffcfc; stroke-width:8px;
