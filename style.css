@@ -11,7 +11,7 @@ body {
 .sugo path:nth-child(1){stroke:#fffcfc; stroke-width:8px;
 }
 header a{color:#44403c !important; text-decoration: none !important;}
-#nkm a{color:#44403c !important; text-decoration: none !important;}
+#nkm a{color:#44403c !important; width:fit-content; text-decoration: none !important;}
 body.open{overflow:hidden;
 }
 strong{font-weight:400;
