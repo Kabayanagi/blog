@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div class="pan">
+ホーム&gt;{% for category in site.categories %}{{ category[0] }}&gt;{% endfor %}{{ page.title }}
+</div>
+  <div class="fllx"><h1>{{ page.title }}</h1><div class="time">{{ page.date | date: '%Y/%m/%d' }}</div></div>
+</div>
+<div>
+{{content}}
+</div>
