@@ -2,5 +2,6 @@ title: 川下の渡し
 description: 穏やかな流れとわたしのブログ
 baseurl: /blog
 url: https://kabayanagi.github.io
-paginate: 5
+paginate: 18
 permalink: /:categories/:title:output_ext
+paginate_path: "/blog/page:num/"
