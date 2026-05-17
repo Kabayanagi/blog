@@ -8,7 +8,7 @@ body {
 }
 #front-page{display:flex; flex-wrap: wrap;
 }
-#front-page>a{
+#front-page>div{
 padding:6px;
 height:276px;
 box-sizing: border-box;
@@ -18,18 +18,19 @@ top:-12px;
 color:#44403c;
 text-decoration:none;
 }
-#front-page>a>div>h2{
+#front-page>div>h2{
 font-size:18px;
 margin:0 18px;
 line-height:1.5;
 }
-#front-page>a>div>.dadada{text-align:right; background:#fffcfc; position:absolute; bottom:0;
+#front-page>div>.dadada{text-align:right; background:#fffcfc; position:absolute; bottom:0;
 width:100%; right:6px;
 }
-#front-page>a>div *{font-size:18px;line-height:1.5;}
+#front-page>div *{font-size:18px;line-height:1.5;}
 p{margin:0; line-height:1.75; padding:0;}
 .sugo{position:absolute; left:11px; top:13px;
 }
+#front-page>div>a{position:absolute; top:0; left:0; width:100%; height:100%;}
 .sugo path:nth-child(1){stroke:#fffcfc; stroke-width:8px;
 }
 header a{color:#44403c !important; text-decoration: none !important;}
